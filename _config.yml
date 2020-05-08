@@ -41,6 +41,14 @@ plainwhite:
 header_pages:
  - about.md
 
+# navigation
+plainwhite:
+  navigation:
+    - title: About Me
+      url: "/my-work"
+    - title: Contact
+      url: "/resume"
+      
 # Build settings
 theme: plainwhite
 
