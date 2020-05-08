@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Demo post"
+date:   2020-05-08 16:27:00 +1000
+categories: Nain Meh
+---
+This is a new website in making, and a new post will be here soon.
+
+```python
+print("Hello World!")
+```
