@@ -10,8 +10,8 @@ description: > # this means to ignore newlines until "show_exerpts:"
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Himanshu Awasthi | 89hardy
-  tagline1: Developer | PM
+  name: Himanshu Awasthi
+  tagline: Developer | PM
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
