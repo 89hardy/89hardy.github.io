@@ -3,9 +3,10 @@ layout: default
 ---
 
 {%- if page.title -%}
-  <h1 class="page-heading">Python and iOS dev | Product Manager | SaaS, PaaS, Fintech | CS Player, Test Matches | Jung over Freud | Guitar, Tabla | Cessna trainee | Cats & Dogs | Mountains, always</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 
+{{ content }}
 
 {%- if site.posts.size > 0 -%}
   <ul class="posts">
@@ -42,3 +43,4 @@ layout: default
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
 	</svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
 {%- endif -%}
+<!-- <h3>Python and iOS dev | Product Manager | SaaS, PaaS, Fintech | CS Player, Test Matches | Jung over Freud | Guitar, Tabla | Cessna trainee | Cats & Dogs | Mountains, always</h3> -->
