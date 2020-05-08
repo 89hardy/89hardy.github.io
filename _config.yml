@@ -38,7 +38,7 @@ plainwhite:
     
 
     # Mastodon instances
-    mastodon:
+  mastodon:
     - username: jekyll
       instance: example.com
     - username: jekyll2
