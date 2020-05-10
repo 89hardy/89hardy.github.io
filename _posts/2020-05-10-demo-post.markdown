@@ -2,7 +2,7 @@
 layout: post
 title:  "New post coming soon"
 date:   2020-05-08 15:39:00 +1000
-categories: Nain Nain
+categories: Nain Meh
 ---
 This is a new website in making, and a new post will be here soon.
 
