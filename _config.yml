@@ -1,8 +1,9 @@
 title: Himanshu Awasthi
 author: Himanshu Awasthi
 email: himanshuawasthi9@gmail.com
-description: > Code, Web, Music, Aviation, Life, Complexity and Everything else
-show_excerpts: true # set to true to show excerpts on the homepage
+description: >
+  Code, Web, Music, Aviation, Life, Complexity and Everything else
+show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
