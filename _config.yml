@@ -1,8 +1,7 @@
 title: Himanshu Awasthi
 author: Himanshu Awasthi
 email: himanshuawasthi9@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Code, Web, Music, Aviation, Life, Complexity and Everything else.
+description: > Code, Web, Music, Aviation, Life, Complexity and Everything else
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -32,8 +31,8 @@ plainwhite:
   navigation:
     - title: About
       url: "/about"
-    - title: Blog
-      url: "https://89hardy.wordpress.com/"
+#    - title: Blog
+#      url: "https://89hardy.wordpress.com/"
 
     
 
