@@ -58,7 +58,7 @@ plainwhite:
 #       url: "/resume"
       
 # Build settings
-theme: plainwhite
+remote_theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
