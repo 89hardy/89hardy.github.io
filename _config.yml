@@ -11,7 +11,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Himanshu Awasthi
-  tagline: Developer | PM
+  tagline: Application Developer | PM
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   analytics_id: "UA-165925100-1"
