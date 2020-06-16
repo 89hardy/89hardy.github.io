@@ -2,7 +2,7 @@
 layout: post
 title: Useful Ubuntu Commands
 date: 2020-06-16 10:58 +1000
-category: Programming Code NoteToSelf
+categories: Programming Code NoteToSelf
 ---
 1. To update the subsystem:
 
