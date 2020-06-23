@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Useful Ubuntu Commands
+title: Useful Commands
 date: 2020-06-16 10:58 +1000
 categories: Programming Code NoteToSelf
 ---
