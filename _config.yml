@@ -15,7 +15,7 @@ plainwhite:
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   analytics_id: "UA-165925100-1"
-  dark_mode: true
+#  dark_mode: true
 
   # generate social links in footer
   social_links:
