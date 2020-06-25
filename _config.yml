@@ -11,17 +11,18 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Himanshu Awasthi
-  tagline: Developer | PM
+  tagline: PM | Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   analytics_id: "UA-165925100-1"
+  dark_mode: true
 
   # generate social links in footer
   social_links:
     twitter: 89hardy
     github: 89hardy
     linkedIn: in/ha89
-    rss: rss
+#    rss: rss
     # dribbble: jekyll
     # flickr:   jekyll
     # instagram: jekyll
@@ -46,8 +47,8 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#  - about.md
+ header_pages:
+  - about.md
 
 # navigation
 # plainwhite:

@@ -2,7 +2,7 @@
 layout: page
 title: Himanshu Awasthi
 ---
-<h5>Product Manager | Python and iOS dev | SaaS, PaaS, Fintech | CS Player, Test Matches | Jung over Freud | Guitar, Tabla | Cessna trainee | Cats & Dogs | Mountains, always</h3>
+<h5>Product Manager | Python and iOS dev | SaaS, PaaS, Fintech | CS Player, Test Matches | Jung over Freud | Guitar, Tabla | Cessna trainee | Cats & Dogs | Mountains, always</h5>
 
 I’m a Computer Science Engineer, Product Manager, and a Python, iOS developer. I’m a musician and was a guitar trainer in my previous life.  I spend most of my free time reading books, blogs, or anything interesting. I’m a big-time mountain person and have spent more than two years of my adult life in a quaint little town of Himachal Pradesh, India. So the “house in the hills’ checkbox has been ticked. I write whenever I feel like. I enjoy going for high altitude treks and losing whatever few precious kilos I gain throughout the year. I daydream a lot, about things which make sense and things which don’t.
 
