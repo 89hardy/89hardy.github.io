@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Commands
-date: 2020-06-16 10:58 +1000
+date: 2020-05-16 10:58 +1000
 categories: Programming Code NoteToSelf
 ---
 * To update the subsystem:

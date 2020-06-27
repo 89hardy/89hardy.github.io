@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In the zone
-date: 2020-06-15 22:11 +1000
+date: 2020-04-15 22:11 +1000
 categories: Programming Code Life
 ---
 After all these years, and a month after starting writing code again, I got a feeling that I was in the zone today. It sounds like a weird term, but no, I was. I started my day by working on something related to a Django tutorial. Then I moved to resolve the SSL issue on this webpage, which I could after some help from a dear friend. I then moved to set up Ubuntu subsystem on Windows and using that instead of Windows Cmd for command-line work. I again had to install ruby, gems, GCC, Make, Jekyll, and set up Git on the new subsystem. Even got to resolve my first ```git merge``` conflict after so long. Who could have thought that I would enjoy doing this!
