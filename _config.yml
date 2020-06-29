@@ -34,8 +34,8 @@ plainwhite:
   navigation:
     - title: About
       url: "/about"
-    - title: StackOverflow
-      url: "https://stackoverflow.com/users/995027/89hardy"
+#    - title: StackOverflow
+#      url: "https://stackoverflow.com/users/995027/89hardy"
 #    - title: Blog
 #      url: "https://89hardy.wordpress.com/"
 
