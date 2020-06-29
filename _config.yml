@@ -22,7 +22,7 @@ plainwhite:
     twitter: 89hardy
     github: 89hardy
     linkedIn: in/ha89
-    stackoverflow: users/995027/89hardy
+#    stackoverflow: users/995027/89hardy
 #    rss: rss
     # dribbble: jekyll
     # flickr:   jekyll
@@ -34,6 +34,8 @@ plainwhite:
   navigation:
     - title: About
       url: "/about"
+    - title: StackOverflow
+      url" "stackoverflow.com/users/995027/89hardy"
 #    - title: Blog
 #      url: "https://89hardy.wordpress.com/"
 
