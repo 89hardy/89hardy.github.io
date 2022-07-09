@@ -63,8 +63,8 @@ plainwhite:
 #       url: "/resume"
       
 # Build settings
-theme: plainwhite
-remote_theme: samarsault/plainwhite-jekyll
+# theme: plainwhite
+# remote_theme: samarsault/plainwhite-jekyll
 
 url: "https://himanshuawasthi.com" # the base hostname & protocol for your site
 plugins:
