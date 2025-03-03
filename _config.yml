@@ -2,72 +2,112 @@ title: Himanshu Awasthi
 author: Himanshu Awasthi
 email: himanshuawasthi9@gmail.com
 description: >
-  Code, Web, Music, Aviation, Life, Complexity and Everything else
-show_excerpts: true # set to true to show excerpts on the homepage
+  Product Manager and Developer sharing insights about technology, coding, product management,
+  and life experiences. Exploring the intersection of tech, aviation, and personal growth.
+show_excerpts: true
 
 remote_theme: samarsault/plainwhite-jekyll
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+
+# Site settings
+url: "https://himanshuawasthi.com"
+baseurl: ""
+permalink: /blog/:year/:month/:day/:title/
+timezone: Australia/Melbourne
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
 sass:
   sass_dir: _sass
+  style: compressed
+
+# Plugin settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Pagination
+paginate: 6
+paginate_path: "/page:num/"
+
+# Theme settings
 plainwhite:
   name: Himanshu Awasthi
   tagline: PM | Developer
   date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  analytics_id: "UA-165925100-1"
+  sitemap: true
+  analytics_id: "G-NRC69TXSJF"
   dark_mode: true
-
-  # generate social links in footer
+  portfolio_image: "assets/portfolio_optimized.png"
+  html_lang: "en"
+  condensed_mobile:
+    - home
+    - post
+    - page
   social_links:
     twitter: 89hardy
     github: 89hardy
     linkedIn: in/ha89
-#    stackoverflow: users/995027/89hardy
-#    rss: rss
-    # dribbble: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # facebook: jekyll
-    
+    rss: rss
+
   navigation:
+    - title: Home
+      url: "/"
     - title: About
       url: "/about"
-#    - title: StackOverflow
-#      url: "https://stackoverflow.com/users/995027/89hardy"
-#    - title: Blog
-#      url: "https://89hardy.wordpress.com/"
+    - title: Blog
+      url: "/blog"
+    - title: Categories
+      url: "/categories"
+    - title: Contact
+      url: "/contact"
 
-    
+# Comments settings
+comments:
+  provider: disqus
+  disqus:
+    shortname: disqus_bY6h6MblFR # Your Disqus shortname
 
-    # Mastodon instances
-#  mastodon:
-#    - username: jekyll
-#      instance: example.com
-#    - username: jekyll2
-#      instance: example.com
+# SEO settings
+twitter:
+  username: 89hardy
+  card: summary_large_image
+social:
+  name: Himanshu Awasthi
+  links:
+    - https://twitter.com/89hardy
+    - https://www.linkedin.com/in/ha89
+    - https://github.com/89hardy
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header_pages:
-#  - about.md
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
-# navigation
-# plainwhite:
-#   navigation:
-#     - title: About Me
-#       url: "/my-work"
-#     - title: Contact
-#       url: "/resume"
-      
-# Build settings
-# theme: plainwhite
-# remote_theme: samarsault/plainwhite-jekyll
+# Reading time settings
+reading_time: true
+words_per_minute: 200
 
-url: "https://himanshuawasthi.com" # the base hostname & protocol for your site
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-#  - jekyll-feed
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - LICENSE.txt
