@@ -1,0 +1,135 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<div class="search-page">
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<style>
+.search-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.search-container {
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#search-results {
+  margin-top: 2rem;
+}
+
+.search-result {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.search-result .meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.search-result .excerpt {
+  margin-top: 0.5rem;
+}
+
+[data-theme="dark"] {
+  #search-input {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #fff;
+  }
+
+  .search-result {
+    border-bottom-color: #444;
+  }
+
+  .search-result .meta {
+    color: #999;
+  }
+}
+</style>
+
+<script>
+// Create the search index when the page loads
+window.searchIndex = [];
+
+{% for post in site.posts %}
+  window.searchIndex.push({
+    title: "{{ post.title | escape }}",
+    categories: {{ post.categories | jsonify }},
+    tags: {{ post.tags | jsonify }},
+    url: "{{ post.url | relative_url }}",
+    date: "{{ post.date | date: site.plainwhite.date_format }}",
+    content: {{ post.content | strip_html | jsonify }},
+    excerpt: {{ post.excerpt | strip_html | truncatewords: 50 | jsonify }}
+  });
+{% endfor %}
+
+// Search function
+function search(query) {
+  const results = window.searchIndex.filter(item => {
+    const searchContent = `${item.title} ${item.categories.join(' ')} ${item.tags.join(' ')} ${item.content}`.toLowerCase();
+    return query.toLowerCase().split(' ').every(term => searchContent.includes(term));
+  });
+
+  displayResults(results);
+}
+
+// Display results
+function displayResults(results) {
+  const container = document.getElementById('search-results');
+  
+  if (results.length === 0) {
+    container.innerHTML = '<p>No results found.</p>';
+    return;
+  }
+
+  const html = results.map(result => `
+    <div class="search-result">
+      <h2><a href="${result.url}">${result.title}</a></h2>
+      <div class="meta">
+        ${result.date} • ${result.categories.join(', ')}
+      </div>
+      <div class="excerpt">${result.excerpt}</div>
+      <div class="tags">
+        ${result.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+      </div>
+    </div>
+  `).join('');
+
+  container.innerHTML = html;
+}
+
+// Add event listener to search input
+document.getElementById('search-input').addEventListener('input', (e) => {
+  const query = e.target.value.trim();
+  if (query.length > 2) {
+    search(query);
+  } else {
+    document.getElementById('search-results').innerHTML = '';
+  }
+});
+</script> 

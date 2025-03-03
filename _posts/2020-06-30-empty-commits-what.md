@@ -4,7 +4,8 @@ title: Empty commits what
 date: 2020-06-30 22:11 +1000
 categories: [Programming, Version Control]
 tags: [git, github-pages, debugging, deployment, troubleshooting, development-workflow]
-description: "A practical solution for triggering builds on GitHub Pages using empty commits when regular pushes fail to initiate the build process."
+description: "Learn how to use empty commits as a clever debugging technique to trigger GitHub Pages builds when regular pushes fail. A practical solution for developers using GitHub Pages for their websites."
+image: /assets/images/posts/empty-commits.jpg
 ---
 I discovered something very simple, but fascinating today! Since this website is made using Github pages, what Github essentially does is every time I make any changes to the code on the local machine, and commit and push to the master repo on Git, it verifies and rebuilds as per the new commit. If there is an error in the code, the build fails at the verification stage. 
 

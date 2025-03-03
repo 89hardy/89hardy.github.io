@@ -1,10 +1,11 @@
 ---
 layout: post
-title: To serverless or to not serverless
+title: To Serverless or to not Serverless
 date: 2020-06-27 22:11 +1000
-categories: [Cloud Computing, Architecture]
-tags: [serverless, cloud-architecture, aws, azure, cost-optimization, scalability, technology-choices]
-description: "An exploration of serverless architecture, its benefits, and considerations for choosing between serverless and traditional architectures."
+categories: [Programming, Cloud Computing]
+tags: [serverless, cloud-computing, aws-lambda, azure-functions, development, architecture]
+description: "Explore the pros and cons of serverless architecture and when to use it. A practical guide for developers considering serverless computing for their next project."
+image: /assets/images/posts/serverless.jpg
 ---
 I had been wanting to learn more about serverless architectures for some time and after a going through it in detail, I think it's very promising. The hype is totally justified! It changes the game in many ways, and is a good way of inclusion. It simplifies the entry barrier for people who are just starting and saves them the time and complexity of the traditional REST APIs.
 
