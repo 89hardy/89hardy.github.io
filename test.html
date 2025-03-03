@@ -1,0 +1,19 @@
+---
+layout: default
+title: Test
+permalink: /test/
+---
+
+<h2>Testing Image Display</h2>
+
+<p>Direct image tag:</p>
+<img src="/assets/portfolio_optimized.png" alt="Test Image 1" style="max-width: 200px;">
+
+<p>Relative path:</p>
+<img src="assets/portfolio_optimized.png" alt="Test Image 2" style="max-width: 200px;">
+
+<p>Base URL path:</p>
+<img src="{{ site.baseurl }}/assets/portfolio_optimized.png" alt="Test Image 3" style="max-width: 200px;">
+
+<p>Full URL path:</p>
+<img src="{{ site.url }}/assets/portfolio_optimized.png" alt="Test Image 4" style="max-width: 200px;"> 
