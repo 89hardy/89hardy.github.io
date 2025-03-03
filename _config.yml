@@ -30,7 +30,7 @@ plugins:
 
 # Pagination
 paginate: 6
-paginate_path: "/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Theme settings
 plainwhite:
@@ -40,7 +40,7 @@ plainwhite:
   sitemap: true
   analytics_id: "G-NRC69TXSJF"
   dark_mode: true
-  portfolio_image: "assets/portfolio_optimized.png"
+  portfolio_image: "portfolio_optimized.png"
   html_lang: "en"
   condensed_mobile:
     - home
@@ -68,7 +68,7 @@ plainwhite:
 comments:
   provider: disqus
   disqus:
-    shortname: disqus_bY6h6MblFR # Your Disqus shortname
+    shortname: disqus_bY6h6MblFR
 
 # SEO settings
 twitter:
