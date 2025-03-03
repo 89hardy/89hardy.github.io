@@ -27,6 +27,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # Pagination
 paginate: 6
@@ -40,7 +41,7 @@ plainwhite:
   sitemap: true
   analytics_id: "G-NRC69TXSJF"
   dark_mode: true
-  portfolio_image: "portfolio.png"
+  portfolio_image: "assets/portfolio.png"
   html_lang: "en"
   condensed_mobile:
     - home
