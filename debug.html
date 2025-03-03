@@ -1,0 +1,32 @@
+---
+layout: default
+title: Debug
+permalink: /debug/
+---
+
+<h2>Image Debug Tests</h2>
+
+<div style="padding: 20px;">
+  <h3>1. Direct Path Test:</h3>
+  <img src="/portfolio.png" alt="Test 1" style="max-width: 100px;">
+  <p>Path: /portfolio.png</p>
+
+  <h3>2. Assets Path Test:</h3>
+  <img src="/assets/portfolio.png" alt="Test 2" style="max-width: 100px;">
+  <p>Path: /assets/portfolio.png</p>
+
+  <h3>3. Relative Path Test:</h3>
+  <img src="portfolio.png" alt="Test 3" style="max-width: 100px;">
+  <p>Path: portfolio.png</p>
+
+  <h3>4. Full URL Test:</h3>
+  <img src="{{ site.url }}/portfolio.png" alt="Test 4" style="max-width: 100px;">
+  <p>Path: {{ site.url }}/portfolio.png</p>
+
+  <h3>Current Config Settings:</h3>
+  <pre>
+  baseurl: {{ site.baseurl }}
+  url: {{ site.url }}
+  portfolio_image: {{ site.plainwhite.portfolio_image }}
+  </pre>
+</div> 
