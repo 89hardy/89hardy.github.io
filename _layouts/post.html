@@ -12,7 +12,10 @@ layout: default
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+    <div class="post-date">
+      <i class="icon-calendar"></i>{{ page.date | date: date_format }}
+      {% include reading_time.html content=content %}
+    </div>
   </div>
   <div class="post">
     {{ content }}
@@ -35,3 +38,15 @@ layout: default
       powered by Disqus.</a></noscript>
   {%- endif -%}
 </div>
+
+<style>
+.reading-time {
+  margin-left: 1rem;
+  color: #666;
+  font-size: 0.9em;
+}
+
+[data-theme="dark"] .reading-time {
+  color: #999;
+}
+</style>

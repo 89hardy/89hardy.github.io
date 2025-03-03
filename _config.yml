@@ -28,6 +28,27 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-image-optim
+
+# Image optimization settings
+image_optim:
+  archive_dir: "assets/images"
+  cache_file: ".image-optim-cache"
+  image_glob: "**/*.{gif,png,jpg,jpeg}"
+  skip_missing_workers: true
+  allow_lossy: true
+  svgo: false
+  pngout: false
+  optipng:
+    level: 6
+    strip: true
+  jpegtran:
+    copy_chunks: false
+    progressive: true
+    strip: true
+  jpegoptim:
+    max_quality: 80
+    strip: all
 
 # Pagination
 paginate: 6
