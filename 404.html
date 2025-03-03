@@ -1,34 +1,96 @@
 ---
-title: Page Not Found
+layout: default
+title: 404 - Page Not Found
+permalink: /404.html
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	{%- include head.html -%}
-	<style>
-	h2 {
-		font-feature-settings: "lnum";
-		background-color: #ddd;
-		width: 140px;
-		height: 140px;
-		border-radius: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center
+
+<div class="not-found-page">
+	<div class="not-found-content">
+		<h1>404</h1>
+		<h2>Page Not Found</h2>
+		<p>The page you're looking for doesn't exist or has been moved.</p>
+		
+		<div class="suggestions">
+			<h3>You might want to:</h3>
+			<ul>
+				<li><a href="/">Go to the homepage</a></li>
+				<li><a href="/blog">Check out the blog</a></li>
+				<li><a href="/categories">Browse categories</a></li>
+				<li><a href="/contact">Contact me</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<style>
+.not-found-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+	text-align: center;
+	padding: 2rem;
+}
+
+.not-found-content {
+	max-width: 600px;
+}
+
+.not-found-content h1 {
+	font-size: 8rem;
+	margin: 0;
+	line-height: 1;
+	color: #333;
+}
+
+.not-found-content h2 {
+	font-size: 2rem;
+	margin: 1rem 0;
+	color: #666;
+}
+
+.suggestions {
+	margin-top: 3rem;
+}
+
+.suggestions h3 {
+	margin-bottom: 1rem;
+}
+
+.suggestions ul {
+	list-style: none;
+	padding: 0;
+}
+
+.suggestions li {
+	margin: 0.5rem 0;
+}
+
+.suggestions a {
+	color: #007bff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.suggestions a:hover {
+	color: #0056b3;
+}
+
+[data-theme="dark"] {
+	.not-found-content h1 {
+		color: #fff;
 	}
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		font-size: 20px;
-		height: 80vh;
+	
+	.not-found-content h2 {
+		color: #ccc;
 	}
-	p {text-align: center; line-height: 2em;}
-	</style>
-</head>
-<body>
-	<h2>404</h2>
-	<p>Page not found.</p>
-</body>
-</html>
+	
+	.suggestions a {
+		color: #66b0ff;
+	}
+	
+	.suggestions a:hover {
+		color: #99ccff;
+	}
+}
+</style>

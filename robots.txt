@@ -1,0 +1,17 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://himanshuawasthi.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_drafts/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+
+# Crawl delay
+Crawl-delay: 10 
