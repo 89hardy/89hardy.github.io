@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Useful Commands
-date: 2020-05-16 10:58 +1000
-categories: Programming Code NoteToSelf
+date: 2020-06-16 22:11 +1000
+categories: [Programming, DevOps]
+tags: [commands, jekyll, apt, linux, development-setup, reference, documentation]
+description: "A collection of useful commands for system updates, Jekyll blog management, and general development tasks."
 ---
 * To update the subsystem:
 

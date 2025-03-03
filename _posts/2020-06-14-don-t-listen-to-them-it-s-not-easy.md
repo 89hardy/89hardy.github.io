@@ -2,7 +2,9 @@
 layout: post
 title: Don't listen to them, It's not easy
 date: 2020-03-14 22:20 +1000
-categories: Programming Life Career Philosophy
+categories: [Career, Personal Growth]
+tags: [career-change, programming, product-management, life-lessons, personal-development, melbourne, career-transition]
+description: "A personal journey of transitioning back to programming after years in product management, dealing with life changes and career decisions during challenging times."
 ---
 While I'm a computer science engineer by qualification, and have worked as an iOS and Python developer for about 4 yrs, it has been six years that I've written a line of any meaningful code. I've been a Product Manager and a Tech Consultant for last 6 yrs and have enjoyed doing it. In November 2019, I decided to move to Melbourne, Austalia from Delhi/Kasauli, India, and life has been a bit of a roller-coaster ever since. In last 6 months, I have seen terrible bushfires, a holiday season, and the corona virus lockdown. All my personal and professional plans have gone for a toss with no relief in sight. To make things worse, I also lost my last remote job in the process and have been struggling to find a meaningful one ever since. In simple words, life hasn't been the best in last 6 months. And I'm sure I'm not the only one!
 

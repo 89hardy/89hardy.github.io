@@ -1,8 +1,10 @@
 ---
 layout: post
-title: The Notion of Being Slow
-date: 2020-06-23 12:56 +1000
-categories: Notion App Technology Product Review
+title: The notion of being slow
+date: 2020-06-23 22:11 +1000
+categories: [Technology, Product Review]
+tags: [notion, productivity-tools, mobile-apps, performance, user-experience, app-development]
+description: "A critical analysis of Notion's mobile app performance issues and their impact on user experience."
 ---
 I've been using the [Notion App](https://www.notion.so) for a few months now, and I love it. It's extremely powerful, flexible, and lets you do more than you can imagine. It's like a combined and a better version of Google Keep and Evernote combined. However, there is a known problem with the mobile app which hasn't been addressed for the longest. And it is that of the launch time. It works beautifully on the desktop but takes forever to launch on the mobile. From my past experiences, I've seen apps behave this way when there is a lot of initial asset loading and syncing happening in the background, specifically at the splash screen stage. While I assumed that we as tech community stopped doing lazy loading this way a few years ago, this app has reminded us that we haven't.
 
