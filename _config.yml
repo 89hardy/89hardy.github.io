@@ -41,7 +41,7 @@ plainwhite:
   sitemap: true
   analytics_id: "G-NRC69TXSJF"
   dark_mode: true
-  portfolio_image: "portfolio.png"
+  portfolio_image: "/portfolio.png"
   html_lang: "en"
   condensed_mobile:
     - home
