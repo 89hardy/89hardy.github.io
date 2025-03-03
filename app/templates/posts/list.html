@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Posts - Blog CMS{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Blog Posts</h2>
+    <a href="{{ url_for('posts.new_post') }}" class="btn btn-primary">New Post</a>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Categories</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+            <tr>
+                <td>{{ post.metadata.title }}</td>
+                <td>{{ post.metadata.date.strftime('%Y-%m-%d') if post.metadata.date else 'No date' }}</td>
+                <td>{{ post.metadata.categories|join(', ') if post.metadata.categories else 'No categories' }}</td>
+                <td>
+                    <a href="{{ url_for('posts.edit_post', filename=post.metadata.filename) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <form action="{{ url_for('posts.delete_post', filename=post.metadata.filename) }}" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %} 

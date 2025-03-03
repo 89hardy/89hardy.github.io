@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}{{ 'Edit' if post else 'New' }} Post - Blog CMS{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+    <h2>{{ 'Edit' if post else 'New' }} Post</h2>
+</div>
+
+<form method="POST" class="mb-4">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{ post.metadata.title if post else '' }}" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="categories" class="form-label">Categories (comma-separated)</label>
+        <input type="text" class="form-control" id="categories" name="categories" 
+               value="{{ post.metadata.categories|join(', ') if post and post.metadata.categories else '' }}">
+    </div>
+    
+    <div class="mb-3">
+        <label for="tags" class="form-label">Tags (comma-separated)</label>
+        <input type="text" class="form-control" id="tags" name="tags" 
+               value="{{ post.metadata.tags|join(', ') if post and post.metadata.tags else '' }}">
+    </div>
+    
+    <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea class="form-control" id="content" name="content" rows="20">{{ post.content if post else '' }}</textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="{{ url_for('posts.list_posts') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var easyMDE = new EasyMDE({
+        element: document.getElementById('content'),
+        spellChecker: false,
+        autosave: {
+            enabled: true,
+            uniqueId: "blogpost_{{ post.metadata.filename if post else 'new' }}"
+        },
+        toolbar: [
+            "bold", "italic", "heading", "|",
+            "quote", "unordered-list", "ordered-list", "|",
+            "link", "image", "|",
+            "preview", "side-by-side", "fullscreen", "|",
+            "guide"
+        ],
+        uploadImage: true,
+        imageUploadEndpoint: "{{ url_for('media.upload_file') }}",
+        imageMaxSize: 5 * 1024 * 1024, // 5MB
+    });
+});
+</script>
+{% endblock %} 
