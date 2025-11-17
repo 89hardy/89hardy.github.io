@@ -1,0 +1,41 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+
+  # Maintain dependencies for Bundler (Ruby/Jekyll)
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ruby"
+    # Group minor and patch updates
+    groups:
+      jekyll-plugins:
+        patterns:
+          - "jekyll-*"
+
+  # Maintain dependencies for pip (Python/Flask CMS)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "python"
+    groups:
+      flask-dependencies:
+        patterns:
+          - "Flask*"
+          - "Werkzeug"

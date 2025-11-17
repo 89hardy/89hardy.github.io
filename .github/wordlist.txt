@@ -1,0 +1,30 @@
+# Custom wordlist for spellcheck
+# Add technical terms, names, and project-specific words here
+
+# Names
+Himanshu
+Awasthi
+
+# Technical terms
+API
+APIs
+backend
+codebase
+frontend
+GitHub
+javascript
+JSON
+kubectl
+markdown
+repo
+serverless
+webapp
+TypeScript
+DevOps
+iOS
+macOS
+
+# Common abbreviations
+etc
+eg
+ie
