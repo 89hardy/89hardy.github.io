@@ -9,7 +9,7 @@ vendor/
 # Ruby
 *.gem
 .bundle
-Gemfile.lock
+# Gemfile.lock should be committed for applications (uncommented for better dependency management)
 
 # IDE
 .idea/
