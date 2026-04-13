@@ -125,6 +125,8 @@ defaults:
 reading_time: true
 words_per_minute: 200
 
+fontawesome_kit: b6c09fd63e
+
 # Exclude files from processing
 exclude:
   - Gemfile

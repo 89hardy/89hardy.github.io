@@ -20,6 +20,11 @@ layout: default
   <div class="post">
     {{ content }}
   </div>
+  <script>
+    document.querySelectorAll('.post img').forEach(function(img) {
+      img.setAttribute('loading', 'lazy');
+    });
+  </script>
   {%- if site.plainwhite.disqus_shortname -%}
   <div id="disqus_thread" style="margin-top:25px"></div>
   <script>

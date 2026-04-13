@@ -149,4 +149,4 @@ permalink: /projects/
 }
 </style>
 
-<script src="https://kit.fontawesome.com/b6c09fd63e.js" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/{{ site.fontawesome_kit }}.js" crossorigin="anonymous"></script> 
