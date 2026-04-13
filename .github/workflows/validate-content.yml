@@ -101,7 +101,6 @@ jobs:
 
   spellcheck:
     runs-on: ubuntu-latest
-    continue-on-error: true # Don't fail the build on spelling errors
 
     steps:
       - name: Checkout
@@ -121,4 +120,3 @@ jobs:
         with:
           config_path: .github/spellcheck-config.yml
           task_name: Markdown
-        continue-on-error: true
