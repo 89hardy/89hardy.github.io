@@ -78,19 +78,19 @@ plainwhite:
     - title: Home
       url: "/"
     - title: About
-      url: "/about"
+      url: "/about/"
     - title: Blog
-      url: "/blog"
+      url: "/blog/"
     - title: Search
-      url: "/search"
+      url: "/search/"
     - title: Categories
-      url: "/categories"
+      url: "/categories/"
     - title: Tags
-      url: "/tags"
+      url: "/tags/"
     - title: Now
-      url: "/now"
+      url: "/now/"
     - title: Contact
-      url: "/contact"
+      url: "/contact/"
 
 # Comments settings
 comments:
