@@ -24,18 +24,3 @@ updates:
       jekyll-plugins:
         patterns:
           - "jekyll-*"
-
-  # Maintain dependencies for pip (Python/Flask CMS)
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "python"
-    groups:
-      flask-dependencies:
-        patterns:
-          - "Flask*"
-          - "Werkzeug"
